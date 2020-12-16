@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="03372cf2-ebf0-4812-a54a-88d328ec6aa4" activeEnvironment="Default" name="REST Project 1" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="11d858c6-a749-43ed-81f7-3da1766ee440" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://localhost:44334" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache/>
+    <con:endpoints>
+      <con:endpoint>https://localhost:44334</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Login" path="/api/Login" id="4c7ac916-ba8a-431c-8d80-249ef61993aa">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Login 1" id="dc307b30-fad2-4a3d-8dab-856d95de673e" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:log="https://localhost/api/login">log:Response</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>404</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>text/plain</con:mediaType>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="31da991e-54cb-4fd8-8f60-554269e6cd0e" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://localhost:44334</con:endpoint>
+          <con:request>
+            {
+            "CPF": "22409466877",
+            "Senha": "123456"
+            }
+          </con:request>
+          <con:originalUri>https://localhost/api/login</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>Profile 1</con:selectedAuthProfile>
+            <con:authType>OAuth 2.0</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+          <con:parameterOrder/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="Revendedor" path="/api/Revendedor" id="cde1a545-32a8-4b6e-8e0c-2516f2f09e9e">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="GET" id="cdc88ed7-f545-44d0-80b0-73ead0f5b69f" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>404</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="f3fefc47-d798-49db-89e8-59f60ff749a8" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://localhost:44334</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://localhost/Revendedor</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>Profile 1</con:selectedAuthProfile>
+            <con:authType>OAuth 2.0</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+      <con:method name="POST" id="38500d69-ce51-4572-ab15-5813f1090f70" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>text/plain</con:mediaType>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/problem+json; charset=utf-8</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+          <con:element xmlns:rev="https://localhost/api/Revendedor">rev:Fault</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+          <con:element xmlns:rev="https://localhost/api/Revendedor">rev:Fault</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="49ab1be2-8dcb-4763-869c-a9ed090580b8" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://localhost:44334</con:endpoint>
+          <con:request>
+            {
+            "nome": "Revendedor 2",
+            "sobrenome": "TESTE",
+            "cpf": "22409466878",
+            "email": "tm.jacometti@gmail.com",
+            "senha": "123456"
+            }
+          </con:request>
+          <con:originalUri>https://localhost/api/Revendedor</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>Profile 1</con:selectedAuthProfile>
+            <con:authType>OAuth 2.0</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="Produto" path="/api/Produto" id="72f095a0-8948-47bd-8b5e-5120d66edfb8">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="GET" id="f5b6efde-e117-4760-a006-87a873838ff0" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+          <con:element xmlns:prod="https://localhost/api/Produto">prod:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="e80afd98-1078-476f-a738-8571a6a0d9c3" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://localhost:44334</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://localhost/api/Produto</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>Profile 1</con:selectedAuthProfile>
+            <con:authType>OAuth 2.0</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+      <con:method name="POST" id="913c7d3c-0d54-4260-a32d-5f3c866a90d2" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>text/plain</con:mediaType>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+          <con:element xmlns:prod="https://localhost/api/Produto">prod:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="e3282074-5ede-4922-8ca9-10bc78a5616f" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://localhost:44334</con:endpoint>
+          <con:request>
+            {
+            "IdCategoria": 1,
+            "Codigo": "00002",
+            "Nome": "Outro produto",
+            "Valor": 17.19
+            }
+          </con:request>
+          <con:originalUri>https://localhost/api/Produto</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>Profile 1</con:selectedAuthProfile>
+            <con:authType>OAuth 2.0</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="Categoria" path="/api/Categoria" id="8aa441f9-9f3b-4060-8e86-1d8b0ca65d5f">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="d5070a9d-a89e-45e8-9a25-75dadf8a0919" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="a4d1a040-c7bb-48f7-beba-ec80d52dc2f2" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://localhost:44334</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://localhost/api/Categoria</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>Profile 1</con:selectedAuthProfile>
+            <con:authType>OAuth 2.0</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+      <con:method name="POST" id="da86e863-39cb-45ed-afc8-ba0ddd6dfe42" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>text/plain</con:mediaType>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="1713f4b5-3ac7-46e1-9756-a382a60d6b6f" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://localhost:44334</con:endpoint>
+          <con:request>
+            {
+            "Nome": "Categoria 1"
+            }
+          </con:request>
+          <con:originalUri>https://localhost/api/Categoria</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>Profile 1</con:selectedAuthProfile>
+            <con:authType>OAuth 2.0</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="Pedido" path="/api/Pedido" id="48f5b712-6be0-4de4-a303-99607ad864f3">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>id</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="GET" id="25f426fd-f7e0-4835-a528-fbea012244f0" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+          <con:element xmlns:ped="https://localhost/api/Pedido">ped:Fault</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="b7f5ea20-4e85-4198-8c61-e1f6e7273ee9" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://localhost:44334</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://localhost/api/Pedido</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>Profile 1</con:selectedAuthProfile>
+            <con:authType>OAuth 2.0</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="id" value="" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>id</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+      <con:method name="POST" id="2b21cdb0-0967-412c-8e74-41abb48478aa" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+          <con:element xmlns:ped="https://localhost/api/Pedido">ped:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="6aaebce3-7f33-470a-a156-9bf8ed25509d" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://localhost:44334</con:endpoint>
+          <con:request>
+            {
+            "IdRevendedor": 1,
+            "IdProduto": 1,
+            "Quantidade": 12,
+            "Valor": 14.9,
+            "Data": "2020-02-13T23:47:00"
+            }
+          </con:request>
+          <con:originalUri>https://localhost/api/Pedido</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>Profile 1</con:selectedAuthProfile>
+            <con:authType>OAuth 2.0</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="id" value="" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>id</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+      <con:method name="PUT" id="0efd1c56-1789-455b-bc77-fa0708b2173a" method="PUT">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+          <con:element xmlns:ped="https://localhost/api/Pedido">ped:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:ped="https://localhost/api/Pedido">ped:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="c10a84b7-0ba2-4811-9fe7-8056107d9009" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://localhost:44334</con:endpoint>
+          <con:request>
+            {
+            "idRevendedor": 1,
+            "idProduto": 1,
+            "idStatus": 2,
+            "quantidade": 12,
+            "valor": 14.9,
+            "data": "2020-02-13T23:47:00",
+            "id": 3,
+            "dataCadastro": "2020-02-13T02:03:59.89"
+            }
+          </con:request>
+          <con:originalUri>https://localhost/api/Pedido</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>Profile 1</con:selectedAuthProfile>
+            <con:authType>OAuth 2.0</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="id" value="" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>id</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+      <con:method name="DELETE" id="93381ae4-1397-4273-86a0-dd264c3a596c" method="DELETE">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+          <con:element xmlns:ped="https://localhost/api/Pedido">ped:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="c096e259-b616-4af2-a1c9-00da5eedbd3a" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://localhost:44334</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://localhost/api/Pedido</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>Profile 1</con:selectedAuthProfile>
+            <con:authType>OAuth 2.0</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="id" value="2" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>id</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:oAuth2ProfileContainer>
+    <con:oAuth2Profile>
+      <con:name>Profile 1</con:name>
+      <con:accessToken>eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjIyNDA5NDY2ODc3IiwiTG9naW4iOiIyMjQwOTQ2Njg3NyIsIk5vbWUiOiJUaGlhZ28iLCJuYmYiOjE1ODE1NzE4MTMsImV4cCI6MTU4MTYwMTgxMywiaWF0IjoxNTgxNTcxODEzLCJpc3MiOiJDYXNoYmFja0lzc3VlciIsImF1ZCI6IkNhc2hiYWNrQXVkaWVuY2UifQ.JBno1xSS6wdc5iqc6Ffg5cCiU1ZEEkpHiirpHEsrXFOZqSx3cIl6BHFuscixLoUdDb2KN5d7gN1UcDgefnwI8JpIvFMFesYp44nOnggw6j0jETT_HunIwzy63AVuWhRwAHtH5N9T_YZzejww-Z_ky_Z-QEmpGzCL_t7GIU-YfsKD-yTTk8jDnLqoljLvDfLuC6GVejl7IbW1kvS0JpZGqkSQCdlojowM41qcQ37tc44ZUuP5WwGfjDzBj1Rd0a42NV0ZIQwIOqW0v5hUHSo7sm2K_nqc3WNoRyE_tsxLD0VfakFB7CV6g-WGTrTmynLnYBfD4vOFCbBbTy3-1xsbrg</con:accessToken>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
+      <con:accessTokenStatus>UNKNOWN</con:accessTokenStatus>
+      <con:accessTokenStartingStatus>ENTERED_MANUALLY</con:accessTokenStartingStatus>
+    </con:oAuth2Profile>
+  </con:oAuth2ProfileContainer>
+  <con:oAuth1ProfileContainer/>
+  <con:sensitiveInformation/>
+</con:soapui-project>
